@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Dropper : MonoBehaviour
 {
-    private float dropTriggerTime = 2;
+    [SerializeField] private float dropTriggerTime = 2;
     private Rigidbody rb;
 
     private void Start()
