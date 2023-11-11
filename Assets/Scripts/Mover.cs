@@ -5,6 +5,12 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
     float moveSpeed = 5f;
+    Rigidbody rb;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     void Update()
     {
@@ -13,6 +19,7 @@ public class Mover : MonoBehaviour
 
     void MovePlayer()
     {
+        rb.velocity = Vector3.zero;
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
