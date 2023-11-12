@@ -12,8 +12,8 @@ public class Scorer : MonoBehaviour
         // Maybe it would be better to reset players rigid body here ?
         if (collision.gameObject.tag != "Hit")
         {
-        score++;
-        Debug.Log("You have bumped in to things: " +  score);
+            score++;
+            Debug.Log("You have bumped in to things: " +  score);
         }
     }
 
